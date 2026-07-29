@@ -1,0 +1,42 @@
+{
+  "entities": {
+    "Pendiente": {
+      "title": "Pendiente",
+      "description": "Tarea o compromiso institucional de la UPTC",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "tarea": { "type": "string" },
+        "estado": { "type": "string" },
+        "prioridad": { "type": "string" },
+        "responsable": { "type": "string" },
+        "fechaCreacion": { "type": "string" },
+        "ultimaActualizacion": { "type": "string" }
+      },
+      "required": ["id", "tarea", "estado", "prioridad", "responsable"]
+    },
+    "Usuario": {
+      "title": "Usuario",
+      "description": "Cuenta de usuario del sistema UPTC",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "nombre": { "type": "string" },
+        "email": { "type": "string" },
+        "username": { "type": "string" },
+        "rol": { "type": "string" }
+      },
+      "required": ["id", "nombre", "email", "username", "rol"]
+    }
+  },
+  "firestore": {
+    "/pendientes/{id}": {
+      "schema": "Pendiente",
+      "description": "Colección de pendientes institucionales"
+    },
+    "/usuarios/{id}": {
+      "schema": "Usuario",
+      "description": "Colección de usuarios del sistema"
+    }
+  }
+}

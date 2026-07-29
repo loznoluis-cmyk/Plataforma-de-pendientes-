@@ -1,0 +1,8 @@
+{
+  "name": "Gestión de Pendientes UPTC",
+  "description": "Sistema de gestión, seguimiento de pendientes, detección inteligente de duplicados semánticos con IA, carga de Excel/CSV y notificaciones - Vicerrectoría Académica UPTC",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
